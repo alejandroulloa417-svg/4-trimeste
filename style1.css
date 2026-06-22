@@ -1,0 +1,111 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* ESTILO GENERAL */
+table {
+    width: 60%;
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+/* TITULO */
+caption {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* CELDAS */
+th, td {
+    text-align: center;
+}
+
+/* TABLA 1 */
+.tabla1 {
+    border-color: black;
+}
+
+/* TABLA 2 */
+.tabla2 {
+    border-color: red;
+}
+
+/* TABLA 3 */
+.tabla3 {
+    border-color: blue;
+}
+
+/* TABLA 4 */
+.tabla4 {
+    border-color: green;
+}
+
+/* CABECERA */
+thead {
+    background-color: #0077cc;
+    color: white;
+}
+
+/* FILAS */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* HOVER */
+tbody tr:hover {
+    background-color: #dfefff;
+}
+
+/* ALINEACIONES DE TABLA */
+.izquierda {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.centro {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.derecha {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* ========================= */
+/* ALINEACIÓN DE TEXTO HORIZONTAL */
+/* ========================= */
+
+.izquierda-texto {
+    text-align: left;
+}
+
+.centro-texto {
+    text-align: center;
+}
+
+.derecha-texto {
+    text-align: right;
+}
+
+/* ========================= */
+/* ALINEACIÓN VERTICAL */
+/* ========================= */
+
+.arriba {
+    vertical-align: top;
+}
+
+.medio {
+    vertical-align: middle;
+}
+
+.abajo {
+    vertical-align: bottom;
+}

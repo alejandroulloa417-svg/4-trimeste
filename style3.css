@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+}
+
+.banner{
+    width: 900px;
+    height: 400px;
+
+    background:
+    linear-gradient(
+        -12deg,
+        #fff 12%,
+        transparent 20%
+    ),
+    url('https://laopinion.com/wp-content/uploads/sites/3/2026/05/AP26119007349289-e1778768448539.jpg?fit=1316');
+
+    background-size: cover;
+    background-position: center;
+}
+
+body{
+    background: #eaeaea;
+}
+.triangle{
+background:  url('https://laopinion.com/wp-content/uploads/sites/3/2026/05/AP26119007349289-e1778768448539.jpg?fit=1316') no-repeat center;
+width: 200px;
+height: 200px;
+clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+body{
+    background: #130a0a;
+}
+.octagon{
+background:  url('https://laopinion.com/wp-content/uploads/sites/3/2026/05/AP26119007349289-e1778768448539.jpg?fit=1316') no-repeat center;
+width: 200px;  
+height: 200px;
+clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.estrella{
+    background:  url('https://laopinion.com/wp-content/uploads/sites/3/2026/05/AP26119007349289-e1778768448539.jpg?fit=1316') no-repeat center;
+    width: 200px;  
+    height: 200px;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+/* styles.css */
+
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eeecec;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button {
+    width: 220px;
+    height: 70px;
+    border: 5px solid #d9d9d9;
+    border-radius: 20px 70px 20px 70px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(240, 233, 233);
+    cursor: pointer;
+
+    background: linear-gradient(to bottom, #ff4f8b, #c70039);
+
+    box-shadow:
+        0 0 15px rgba(255, 115, 0, 0.8),
+        0 0 30px rgba(255, 230, 0, 0.6);
+
+    transition: 0.3s;
+}
+
+.button:hover{
+    transform: scale(1.1);
+}
+
+
+
+.masked{
+
+    width:400px;
+    height:300px;
+
+    background-image:url("https://www.laopinion.co/sites/default/files/styles/portada_principal_747x420/public/2022-12/7%20NEYMAR%20JR.jpg?itok=tp8uyp1C");
+
+    background-size:cover;
+    background-position:center;
+
+    -webkit-mask-image:
+    linear-gradient(to bottom, transparent 5%, black 75%);
+
+    mask-image:
+    linear-gradient(to bottom, transparent 5%, black 75%);
+}
+
+.masked2{
+    -webkit-mask-image: url("https://cdn.pixabay.com/photo/2016/06/30/12/44/architecture-1488948_1280.jpg");
+    mask-image: url("https://cdn.pixabay.com/photo/2016/06/30/12/44/architecture-1488948_1280.jpg");
+}
+

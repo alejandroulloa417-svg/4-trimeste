@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+}
+
+.title {
+  padding: 20px;
+  margin: 0;
+}
+
+.container {
+  padding: 20px;
+}
+
+/* 🔴 relative */
+.relative {
+  background: crimson;
+  color: white;
+  padding: 10px;
+  width: 120px;
+  position: relative;
+  top: 20px;
+  left: 160px;
+}
+
+/* 🟩 CUADRO VERDE (fondo grande) */
+.green-box {
+  background: #1b7275;
+  height: 400px;
+  margin-top: 20px;
+  position: relative;
+  padding: 10px;
+}
+
+/* 🔵 CUADRO AZUL (dentro del verde) */
+.blue-box {
+  background: #1e4fff;
+  padding: 30px;
+  width: 500px;
+  height: 300px;
+  left: 150px;
+  top: 20px;
+  position: relative;
+}
+
+/* sticky */
+.sticky {
+  background: lightgray;
+  padding: 20px;
+  width: 50px;
+  position: sticky ;
+  top: 300px;
+}
+
+/* absolute */
+.absolute {
+  background: pink;
+  padding: 30px;
+  width: 50px;
+
+  position: absolute;
+  right: 60px;
+  top: 150px;
+}
+
+/* static */
+.static {
+  background: orange;
+  padding: 15px;
+  width: 60px;
+  position: static;
+  left: 20px;
+  margin-top: 320px;
+  
+}
+
+/* fixed */
+.fixed {
+  background: yellow;
+  padding: 20px;
+  width: 70px;
+
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  border: 1px solid #000;
+}

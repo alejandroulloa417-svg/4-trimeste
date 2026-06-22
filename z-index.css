@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+/* ==========================
+   BARAJA DE 11 CARTAS
+========================== */
+
+.baraja{
+    position: relative;
+    width: 900px;
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+.carta{
+    position: absolute;
+    width: 120px;
+    height: 170px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.3);
+    transition: all 0.3s ease;
+    background-size: cover;
+    background-position: center;
+}
+
+.carta:hover{
+    transform: translateY(-20px) scale(1.05);
+    z-index: 20;
+}
+
+/* ==========================
+   CARTAS INCLINADAS HACIA ABAJO
+========================== */
+
+.carta1{
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    background: url("https://files.winsports.co/cms/2025/11/16140251/Gustavo-Puerta-admitio-de-que-equipo-es-hincha.jpg") center/cover;
+}
+
+.carta2{
+    left: 60px;
+    top: 20px;
+    z-index: 2;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7w46TzQ5gVAfRCl4nn93CVwqCpGAH5hQNY3USEYXwSg&s=10") center/cover;
+}
+
+.carta3{
+    left: 120px;
+    top: 40px;
+    z-index: 3;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBfxP5-tOIsTs5bjszVWvWDCySMuV8NgVdgd5avtNcYg&s=10") center/cover;
+}
+
+.carta4{
+    left: 180px;
+    top: 60px;
+    z-index: 4;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg-nKKUxxVRtcj0mw-KBQiqI6gP7TTXjKYzQqR9VPI3Q&s=10") center/cover;
+}
+
+.carta5{
+    left: 240px;
+    top: 80px;
+    z-index: 5;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKpjVCBkuPihkmUc2UtrjGZs_rYek5TjnNxQISMA-fQQ&s=10") center/cover;
+}
+
+.carta6{
+    left: 300px;
+    top: 100px;
+    z-index: 6;
+    background: url("https://cdn.jwplayer.com/v2/media/QKS6Jk33/poster.jpg?width=720") center/cover;
+}
+
+.carta7{
+    left: 360px;
+    top: 120px;
+    z-index: 7;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSvaZwema0S7nURzj0Ni3hRJXpZzYiiCF8GupPNHs4aA&s=10") center/cover;
+}
+
+.carta8{
+    left: 420px;
+    top: 140px;
+    z-index: 8;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9KcrkhWWSvaIKm4vOlzeU0_JLJTRvdwwWAGafbydZ4w&s=10") center/cover;
+}
+
+.carta9{
+    left: 480px;
+    top: 160px;
+    z-index: 9;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCqg43IXH4uBTf4Ig3bP-M9WFXUWzc9CHuwNqReFxfxg&s=10") center/cover;
+}
+
+.carta10{
+    left: 540px;
+    top: 180px;
+    z-index: 10;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDYy9pCaXTZa5fRTaBQsLjY9KTmikwIud8wUQnMzLL5A&s=10") center/cover;
+}
+
+.carta11{
+    left: 600px;
+    top: 200px;
+    z-index: 11;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6FvsPmmotlaZXwpHB9sCjv6v3SLLq9WFXC2OWkFZKKA&s=10") center/cover;
+}
+
+/* ==========================
+   TÍTULO
+========================== */
+
+h1{
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* ==========================
+   TRANSFORMACIONES
+========================== */
+
+.transformaciones{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.caja{
+    width: 120px;
+    height: 120px;
+    background: steelblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.rotate:hover{
+    transform: rotate(45deg);
+}
+
+.scale:hover{
+    transform: scale(1.3);
+}
+
+.skew:hover{
+    transform: skew(20deg);
+}
+
+.matrix:hover{
+    transform: matrix(1, 0.3, 0.3, 1, 20, 10);
+}
+
+
+
+.caja{
+    width: 120px;
+    height: 120px;
+    margin: 30px;
+    background: steelblue;
+    color: white;
+    text-align: center;
+    line-height: 120px;
+    font-weight: bold;
+}
+
+/* Gira 45 grados */
+.rotate{
+    transform: rotate(45deg);
+}
+
+/* Aumenta tamaño 1.5 veces */
+.scale{
+    transform: scale(1.5);
+}
+
+/* Inclina 20 grados */
+.skew{
+    transform: skew(20deg);
+}
+
+/* Transformación personalizada */
+.matrix{
+    transform: matrix(1, 0.3, 0.5, 1, 0, 0);
+}
+
+
+
+

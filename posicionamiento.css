@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* scroll MUY evidente */
+body{
+    min-height: 400vh;
+}
+
+/* título */
+h1{
+    margin: 20px;
+}
+
+/* contenedor absolute */
+.contenedor{
+    width: 900px;
+    height: 500px;
+    border: 4px dashed black;
+    margin: auto;
+    position: relative;
+    background-color: #f5f5f5;
+}
+
+/* cajas */
+.caja{
+    width: 180px;
+    height: 90px;
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* esquinas */
+.rojo{
+    background-color: crimson;
+    top: 30px;
+    left: 22px;
+}
+
+.naranja{
+    background-color: darkorange;
+    top: 20px;
+    right: 30px;
+}
+
+.amarillo{
+    background-color: gold;
+    bottom: 30px;
+    left: 30px;
+}
+
+.verde{
+    background-color: limegreen;
+    bottom: 15px;
+    right: 15px;
+}
+
+/* centro */
+.centro{
+    background-color: turquoise;
+    width: 200px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* FIXED más visible */
+.fijo{
+    width: 180px;
+    height: 80px;
+    position: fixed;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 9999;
+    border-radius: 10px;
+}
+
+.fijo-arriba{
+    background-color: navy;
+    top: 15px;
+    left: 15px;
+}
+
+.fijo-abajo{
+    background-color: black;
+    bottom: 15px;
+    right: 15px;
+}
+
+/* indicador scroll */
+.scroll-indicador{
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: red;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 8px;
+    z-index: 9999;
+}
+
+/* bloques grandes para scroll */
+.bloque{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+/* colores de secciones */
+.azul{ background: steelblue; }
+.rojo2{ background: crimson; }
+.verde2{ background: seagreen; }
+.morado{ background: rebeccapurple; }
+.gris{ background: #333; }

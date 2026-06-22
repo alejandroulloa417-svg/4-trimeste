@@ -1,0 +1,196 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#fff;
+}
+
+/* HEADER */
+
+header{
+    height:70px;
+    background:#17c8f2;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 40px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.menu{
+    font-size:32px;
+    cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+    position:relative;
+    height:350px;
+    background:#18c9f4;
+    overflow:visible;
+}
+
+.hero-text{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    color:#222;
+}
+
+.hero-text h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.hero-text p{
+    font-size:24px;
+}
+
+/* NUBES */
+
+.cloud{
+    position:absolute;
+    background:white;
+    width:90px;
+    height:35px;
+    border-radius:50px;
+}
+
+.cloud::before{
+    content:"";
+    position:absolute;
+    width:40px;
+    height:40px;
+    background:white;
+    border-radius:50%;
+    top:-15px;
+    left:10px;
+}
+
+.cloud::after{
+    content:"";
+    position:absolute;
+    width:45px;
+    height:45px;
+    background:white;
+    border-radius:50%;
+    top:-20px;
+    right:10px;
+}
+
+.c1{top:50px;left:120px;}
+.c2{top:100px;left:350px;}
+.c3{top:70px;right:300px;}
+.c4{top:180px;right:120px;}
+.c5{top:220px;left:500px;}
+
+/* ABOUT */
+
+.about{
+    position:relative;
+    text-align:center;
+    padding:120px 50px 70px;
+    background:#f7fdff;
+    overflow:visible;
+}
+
+.about::before{
+    content:"";
+    position:absolute;
+    width:300px;
+    height:300px;
+    background:rgba(27, 27, 29, 0.08);
+    top:-50px;
+    left:50%;
+    translate:-50%;
+}
+
+/* CARRO */
+
+.car{
+    position:absolute;
+    top:-140px;
+    left:50%;
+    transform:translateX(-50%);
+    width:550px;
+    height:300px;
+    background:url("https://hips.hearstapps.com/hmg-prod/images/rt-bugatti-chiron-super-sport-atiyeh-1-666b54d995eab.jpg?crop=0.668xw:1.00xh;0.159xw,0&resize=1200:*") no-repeat center;
+    opacity:0.25;
+    z-index:1;
+}
+
+/* TEXTO SOBRE EL CARRO */
+
+.about h2,
+.about h4,
+.about p{
+    position:relative;
+    z-index:2;
+}
+
+.about h2{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.about h4{
+    color:#666;
+    margin-bottom:20px;
+}
+
+.about p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.6;
+    color:#444;
+}
+
+/* TEAM */
+
+.team{
+    display:flex;
+    justify-content:space-around;
+    margin-top:80px;
+    flex-wrap:wrap;
+    position:relative;
+    z-index:2;
+}
+
+.member{
+    text-align:center;
+}
+
+.avatar{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    border:3px solid #8aa0b3;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#8aa0b3;
+    font-size:45px;
+}
+
+.member h3{
+    margin-top:15px;
+    font-size:18px;
+}
+
+.member span{
+    color:#666;
+    font-style:italic;
+}

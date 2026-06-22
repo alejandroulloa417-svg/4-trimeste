@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Overflow CSS externo</title>
+  <link rel="stylesheet" href="display.css">
+</head>
+<body>
+
+<h2>Overflow: visible</h2>
+<div class="contenedor visible">
+  <p>Este es un texto largo que se sale del contenedor. No se recorta.</p>
+  <img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2022/09/13/16630884605041.jpg" alt="imagen">
+</div>
+
+<h2>Overflow: hidden</h2>
+<div class="contenedor hidden">
+  <p>Este es un texto largo que se corta dentro del contenedor.</p>
+  <img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2022/09/13/16630884605041.jpg" alt="imagen">
+</div>
+
+<h2>Overflow: scroll</h2>
+<div class="contenedor scroll">
+  <p>Este es un texto largo que siempre muestra barras de desplazamiento.</p>
+  <img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2022/09/13/16630884605041.jpg" alt="imagen">
+</div>
+
+<h2>Overflow: auto</h2>
+<div class="contenedor auto">
+  <p>Este es un texto largo que solo muestra scroll si es necesario.</p>
+  <img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2022/09/13/16630884605041.jpg" alt="imagen">
+</div>
+
+</body>
+</html>

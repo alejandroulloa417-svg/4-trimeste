@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#eee;
+}
+
+.container{
+    width:450px;
+    background:linear-gradient(to right,#3c6eca,#698f6a);
+    padding:20px;
+}
+
+.container h1{
+    text-align:center;
+    color:white;
+    margin-bottom:30px;
+    text-shadow:2px 2px 4px black;
+}
+
+.login-box{
+    background:rgba(0,0,0,0.35);
+    padding:30px;
+    border-radius:50px;
+}
+
+.login-box h2{
+    text-align:center;
+    color:white;
+    margin-bottom:10px;
+}
+
+.login-box p{
+    text-align:center;
+    color:#ddd;
+    margin-bottom:25px;
+}
+
+label{
+    display:block;
+    color:white;
+    margin-bottom:8px;
+    margin-top:15px;
+    font-size:18px;
+}
+
+input[type="text"],
+input[type="password"]{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:50px;
+    margin-bottom:10px;
+}
+
+.options{
+    display:flex;
+    justify-content:space-between;
+    margin:15px 0;
+    color:white;
+}
+
+.options a{
+    color:#66b3ff;
+    text-decoration:none;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    background:#222;
+    color:white;
+    border:none;
+    border-radius:20px;
+    font-size:20px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#111;
+}
+
+.register{
+    text-align:center;
+    margin-top:20px;
+    color:white;
+}
+
+.register a{
+    color:#66b3ff;
+    text-decoration:none;
+}

@@ -1,0 +1,149 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas con colspan y rowspan</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <!-- TABLA 1 -->
+<table class="tabla1" border="1" cellspacing="2" cellpadding="3">
+
+    <caption>Tabla Normal</caption>
+
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Edad</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <!-- Texto arriba e izquierda -->
+        <tr height="20">
+            <td rowspan="2" class="izquierda-texto arriba">1</td>
+            <td class="izquierda-texto arriba">Ana</td>
+            <td class="centro-texto arriba">24</td>
+        </tr>
+
+        <!-- Texto centrado -->
+        <tr height="20">
+            <td class="centro-texto medio">Ana María</td>
+            <td class="centro-texto medio">25</td>
+        </tr>
+
+        <!-- Texto derecha y abajo -->
+        <tr height="20">
+            <td class="derecha-texto abajo">2</td>
+            <td class="derecha-texto abajo">Carlos</td>
+            <td class="derecha-texto abajo">29</td>
+        </tr>
+
+    </tbody>
+
+</table>
+
+
+<!-- TABLA 2 -->
+<table class="tabla2" border="5" cellspacing="8" cellpadding="9">
+
+    <caption>Tabla Izquierda</caption>
+
+    <thead>
+        <tr>
+            <th colspan="2">Productos y Precios</th>
+        </tr>
+
+        <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr height="30">
+            <td class="izquierda-texto medio">Mouse</td>
+            <td class="derecha-texto medio">$20</td>
+        </tr>
+
+        <tr height="30">
+            <td class="centro-texto abajo">Teclado</td>
+            <td class="centro-texto abajo">$35</td>
+        </tr>
+
+    </tbody>
+
+</table>
+
+
+<!-- TABLA 3 -->
+<table class="tabla3 centro" border="5" cellspacing="10" cellpadding="8">
+
+    <caption>Tabla Centro</caption>
+
+    <thead>
+        <tr>
+            <th>Curso</th>
+            <th>Duración</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr height="35">
+            <td rowspan="2" class="centro-texto arriba">HTML</td>
+            <td class="izquierda-texto arriba">4 semanas</td>
+        </tr>
+
+        <tr height="35">
+            <td class="derecha-texto abajo">
+                Prácticas adicionales
+            </td>
+        </tr>
+
+        <tr height="35">
+            <td class="centro-texto medio">CSS</td>
+            <td class="centro-texto medio">5 semanas</td>
+        </tr>
+
+    </tbody>
+
+</table>
+
+
+<!-- TABLA 4 -->
+<table class="tabla4 derecha" border="8" cellspacing="4" cellpadding="7">
+
+    <caption>Tabla Derecha</caption>
+
+    <thead>
+        <tr>
+            <th>País</th>
+            <th>Capital</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr height="25">
+            <td class="izquierda-texto arriba">Colombia</td>
+            <td class="derecha-texto abajo">Bogotá</td>
+        </tr>
+
+        <tr height="25">
+            <td colspan="2" class="centro-texto medio">
+                Perú - Lima
+            </td>
+        </tr>
+
+    </tbody>
+
+</table>
+</body>
+</html>

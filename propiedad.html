@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Float y Clear</title>
+    <link rel="stylesheet" href="propiedad.css">
+</head>
+<body>
+
+<h1>Ejemplo de Float y Clear</h1>
+
+<div class="contenedor">
+
+    <div class="caja izquierda">
+        float: left
+    </div>
+
+    <div class="caja derecha">
+        float: right
+    </div>
+
+    <p class="texto">
+        Este texto rodea los elementos flotantes.  
+        El float saca los elementos del flujo normal y permite que el texto los envuelva.
+        Puedes ver cómo el párrafo se acomoda alrededor de los bloques.
+    </p>
+
+    <div class="caja clear-right">
+        clear: right
+    </div>
+
+    <p class="texto">
+        Este bloque usa clear right, por lo tanto NO permite elementos flotantes a su derecha.
+        Se coloca debajo del elemento que flotaba a la derecha.
+    </p>
+
+</div>
+
+</body>
+</html>

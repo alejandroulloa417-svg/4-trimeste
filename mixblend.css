@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6jKRGElYWT9Ti2NL4cLSDwGo5a7ZXoLNFvtsqn9d3EMK5s5-vte-kAQtq&s=10") center/cover;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    background-image: url("https://assets-us-01.kc-usercontent.com/31dbcbc6-da4c-0033-328a-d7621d0fa726/1be2e367-527d-4372-89f2-ace1b674cfb9/Disen%CC%83o%20sin%20ti%CC%81tulo%20%283%29.png?ver=03-06-2025?w=1080&q=75");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Multiply */
+.multiply{
+    background-color: #ccaaaa;
+    mix-blend-mode: multiply;
+}
+
+/* Screen */
+.screen{
+    background-color: #00ff00;
+    mix-blend-mode: screen;
+}
+
+/* Overlay */
+.overlay{
+    background-color: #0000ff;
+    mix-blend-mode: overlay;
+}
+
+/* Darken */
+.darken{
+    background-color: #ff9900;
+    mix-blend-mode: darken;
+}
+
+/* Lighten */
+.lighten{
+    background-color: #9900ff;
+    mix-blend-mode: lighten;
+}
+
+/* Color Dodge */
+.dodge{
+    background-color: #00ffff;
+    mix-blend-mode: color-dodge;
+}
+
+/* Saturation */
+.saturation{
+    background-color: #ff00ff;
+    mix-blend-mode: saturation;
+}
+
+/* Color */
+.color{
+    background-color: #ffff00;
+    mix-blend-mode: color;
+}
+
+/* Luminosity */
+.luminosity{
+    background-color: #ffffff;
+    mix-blend-mode: luminosity;
+}

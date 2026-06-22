@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* =========================
+   1. margin: auto
+========================= */
+.caja {
+  width: 300px;
+  background: lightblue;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+/* =========================
+   2. menu con margin-left: auto
+========================= */
+.menu {
+  display: flex;
+  background: #222;
+  padding: 15px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.login {
+  margin-left: auto;
+  background: orange;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* =========================
+   3. margin: 0 auto
+========================= */
+.card {
+  width: 250px;
+  background: coral;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* =========================
+   4. CUADRADO CENTRADO PERFECTO
+========================= */
+.contenedor-centro {
+  height: 300px;
+  display: flex;
+  justify-content: center; /* centro horizontal */
+  align-items: center;     /* centro vertical */
+  background: #f0f0f0;
+}
+
+.cuadrado {
+  width: 120px;
+  height: 120px;
+  background: green;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

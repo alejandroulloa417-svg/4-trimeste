@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+.contenedor{
+    width: 80%;
+    margin: auto;
+    border: 3px dashed black;
+    padding: 20px;
+    text-align: left;
+}
+
+/* cajas flotantes */
+.caja{
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    margin: 10px;
+}
+
+/* float left */
+.izquierda{
+    float: left;
+    background-color: royalblue;
+}
+
+/* float right */
+.derecha{
+    float: right;
+    background-color: crimson;
+}
+
+/* clear right */
+.clear-right{
+    clear: right;
+    background-color: green;
+    margin-top: 20px;
+}
+
+/* texto */
+.texto{
+    margin: 20px 0;
+}

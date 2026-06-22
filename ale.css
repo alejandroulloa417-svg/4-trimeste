@@ -1,0 +1,34 @@
+.contenedor {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 80px;
+}
+
+.caja {
+  width: 450px;
+  height: 260px;
+  border: 25px solid #c97a45;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* imágenes separadas */
+.img1 {
+  background-image: url("URL1");
+}
+
+.img2 {
+  background-image: url("URL2");
+}
+
+.img3 {
+  background-image: url("URL3");
+}
