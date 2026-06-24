@@ -1,0 +1,94 @@
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    color: white;
+}
+
+h1{
+    margin-bottom: 30px;
+}
+
+.caja{
+    width: 500px;
+    padding: 25px;
+    background: white;
+    color: #333;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+    direction: ltr;
+    text-align: left;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.caja:hover{
+    direction: rtl;
+    text-align: right;
+    background: #ffe082;
+    transform: scale(1.05);
+}
+
+
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 40px;
+}
+
+.lista{
+    list-style: none;
+    padding: 0;
+    width: 350px;
+}
+
+.lista li{
+    background: white;
+    color: #333;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+    transition: .3s;
+}
+
+/* Primer hijo */
+.lista li:first-child{
+    background: #2ecc71;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Último hijo */
+.lista li:last-child{
+    background: #e74c3c;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Tercer hijo */
+.lista li:nth-child(3){
+    background: #f1c40f;
+}
+
+/* Elementos pares */
+.lista li:nth-child(even){
+    border-left: 8px solid #3498db;
+}
+
+/* Elementos impares */
+.lista li:nth-child(odd){
+    border-right: 8px solid #9b59b6;
+}
+
+.lista li:hover{
+    transform: translateX(10px);
+}

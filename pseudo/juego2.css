@@ -1,0 +1,127 @@
+body{
+    font-family:Arial,sans-serif;
+    background:#111827;
+    color:white;
+    text-align:center;
+}
+
+input{
+    display:none;
+}
+
+label{
+    padding:12px 18px;
+    margin:5px;
+    background:#1e293b;
+    border-radius:10px;
+    cursor:pointer;
+    display:inline-block;
+}
+
+label:hover{
+    background:#334155;
+}
+
+.campo{
+    width:900px;
+    height:500px;
+    margin:30px auto;
+    position:relative;
+    overflow:hidden;
+
+    background:
+    repeating-linear-gradient(
+        90deg,
+        #2e7d32,
+        #2e7d32 70px,
+        #388e3c 70px,
+        #388e3c 140px
+    );
+
+    border-radius:20px;
+}
+
+.arco{
+    position:absolute;
+    top:40px;
+    left:50%;
+    transform:translateX(-50%);
+    width:300px;
+    height:150px;
+    border:8px solid white;
+}
+
+.arquero{
+    position:absolute;
+    top:150px;
+    left:50%;
+    transform:translateX(-50%);
+    font-size:70px;
+}
+
+.jugador{
+    position:absolute;
+    bottom:70px;
+    left:380px;
+    font-size:90px;
+}
+
+.balon{
+    position:absolute;
+    bottom:100px;
+    left:460px;
+    font-size:45px;
+    transition:1s;
+}
+
+.resultado{
+    width:500px;
+    margin:auto;
+    padding:20px;
+    border-radius:15px;
+    background:#1e293b;
+}
+
+/* IZQUIERDA */
+
+body:has(#izquierda:checked) .balon{
+    transform:translate(-180px,-280px);
+}
+
+body:has(#izquierda:checked) .resultado::before{
+    content:"⚽ Disparo a la izquierda ";
+}
+
+/* CENTRO */
+
+body:has(#centro:checked) .balon{
+    transform:translate(0,-300px);
+}
+
+body:has(#centro:checked) .resultado::before{
+    content:"⚽ Disparo al centro ";
+}
+
+/* DERECHA */
+
+body:has(#derecha:checked) .balon{
+    transform:translate(180px,-280px);
+}
+
+body:has(#derecha:checked) .resultado::before{
+    content:"⚽ Disparo a la derecha ";
+}
+
+/* JUGADORES */
+
+body:has(#james:checked) .jugador::after{
+    content:" James";
+}
+
+body:has(#diaz:checked) .jugador::after{
+    content:" Díaz";
+}
+
+body:has(#mbappe:checked) .jugador::after{
+    content:" Mbappé";
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enabled y Disabled</title>
+    <link rel="stylesheet" href="estados.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>🚀 Validación con Enabled y Disabled</h1>
+
+        <form id="formulario">
+            <input
+                type="text"
+                id="nombre"
+                placeholder="Escribe tu nombre..."
+            >
+
+            <button type="submit" id="btnEnviar" disabled>
+                Enviar ✨
+            </button>
+        </form>
+
+        <p id="mensaje"></p>
+    </div>
+
+    <script>
+        const nombre = document.getElementById("nombre");
+        const boton = document.getElementById("btnEnviar");
+        const mensaje = document.getElementById("mensaje");
+
+        nombre.addEventListener("input", () => {
+            boton.disabled = nombre.value.trim() === "";
+        });
+
+        document.getElementById("formulario")
+            .addEventListener("submit", (e) => {
+                e.preventDefault();
+
+                if (nombre.value.trim() === "") {
+                    mensaje.textContent = "❌ Debes escribir un nombre";
+                    mensaje.className = "error";
+                    return;
+                }
+
+                mensaje.textContent =
+                    `✅ Bienvenido ${nombre.value}`;
+                mensaje.className = "success";
+            });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+
+h1{
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.botones{
+    margin-bottom: 30px;
+}
+
+.botones a{
+    text-decoration: none;
+    background: white;
+    color: #333;
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.botones a:hover{
+    transform: scale(1.1);
+}
+
+.contenedor section{
+    display: none;
+    max-width: 600px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+/* Mostrar sección seleccionada */
+:target{
+    display: block;
+}
+
+/* Español */
+:lang(es){
+    background: #e60909;
+}
+
+/* Inglés */
+:lang(en){
+    background: #3498db;
+}
+
+/* Francés */
+:lang(fr){
+    background: #2ecc71;
+}
+
+/* Chino */
+:lang(zh){
+    background: #f39c12;
+    font-family: "Microsoft YaHei", "SimHei", sans-serif;
+}
+
+/* Mostrar español por defecto */
+section:first-of-type{
+    display: block;
+}
+
+section:target{
+    display: block;
+}
+
+.contenedor:has(section:target) section:first-of-type{
+    display: none;
+}

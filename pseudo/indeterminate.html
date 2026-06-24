@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:checked e :indeterminate</title>
+    <link rel="stylesheet" href="indeterminate.css">
+</head>
+<body>
+
+    <h1>Pseudo-clases :checked e :indeterminate</h1>
+
+    <!-- CHECKBOX -->
+    <section>
+        <h2>Checkbox con :checked</h2>
+
+        <label class="opcion">
+            <input type="checkbox">
+            Opción 1
+        </label>
+
+        <label class="opcion">
+            <input type="checkbox" checked>
+            Opción 2 (marcada)
+        </label>
+    </section>
+
+    <!-- INDETERMINATE -->
+    <section>
+        <h2>Checkbox con :indeterminate</h2>
+
+        <label class="opcion">
+            <input type="checkbox" id="indeterminado">
+            Selección parcial
+        </label>
+    </section>
+
+    <!-- RADIO -->
+    <section>
+        <h2>Radio Buttons con :checked</h2>
+
+        <label class="opcion">
+            <input type="radio" name="lenguaje">
+            HTML
+        </label>
+
+        <label class="opcion">
+            <input type="radio" name="lenguaje" checked>
+            CSS
+        </label>
+
+        <label class="opcion">
+            <input type="radio" name="lenguaje">
+            JavaScript
+        </label>
+    </section>
+
+    <!-- SELECT -->
+    <section>
+        <h2>Select con option:checked</h2>
+
+        <select>
+            <option>HTML</option>
+            <option selected>CSS</option>
+            <option>JavaScript</option>
+        </select>
+    </section>
+
+    <!-- SELECT MULTIPLE -->
+    <section>
+        <h2>Select múltiple con option:checked</h2>
+
+        <select multiple size="4">
+            <option selected>HTML</option>
+            <option>CSS</option>
+            <option selected>JavaScript</option>
+            <option>React</option>
+        </select>
+    </section>
+
+    <script>
+        const checkbox = document.getElementById('indeterminado');
+        checkbox.indeterminate = true;
+    </script>
+
+</body>
+</html>

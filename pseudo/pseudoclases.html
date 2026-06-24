@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pseudoclases claras</title>
+  <link rel="stylesheet" href="pseudoclases.css">
+</head>
+<body>
+
+  <h2>:hover</h2>
+  <button class="hover-btn">Pasa el mouse</button>
+
+  <h2>:active</h2>
+  <button class="active-btn">Haz clic</button>
+
+  <h2>:focus</h2>
+  <input class="focus-input" type="text" placeholder="Haz clic aquí">
+
+  <h2>:focus-visible</h2>
+  <button class="focus-visible-btn">Usa TAB aquí</button>
+
+  <h2>:focus-within</h2>
+  <div class="contenedor">
+    <label>Nombre:</label>
+    <input type="text">
+  </div>
+
+
+  <h1>✨ Pseudoclases de Enlaces ✨</h1>
+
+    <div class="contenedor">
+        <a href="https://example.com" target="_blank">
+            🌐 Visitar Example
+        </a>
+
+        <a href="#objetivo">
+            🎯 Ir al Objetivo
+        </a>
+    </div>
+
+    <div class="espacio"></div>
+
+    <section id="objetivo">
+        <h2>🎉 ¡Has llegado al objetivo!</h2>
+        <p>Este elemento utiliza la pseudoclase <strong>:target</strong>.</p>
+    </section>
+
+  </div>
+</body>
+</html>
